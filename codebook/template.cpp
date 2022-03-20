@@ -11,15 +11,17 @@
 #define epb emplace_back
 #define all(x) x.begin(),x.end()
 #define io  ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+//#define int long long
 using namespace std;
 
 bool cmp(int a,int b){
     return a > b;
 }
 
-int main() {
+signed main() {
     io
     ll t,n,m,i,j,k,temp;
+    vector<ll> a;
     cin >> t;
     while(t--){
         cin >> n;
@@ -33,7 +35,5 @@ int main() {
     }
 
     
-    
-    
-    return 0;
+
 }
