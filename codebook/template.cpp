@@ -21,9 +21,9 @@ bool cmp(int a,int b){
 signed main() {
     io
     ll t,n,m,i,j,k,temp;
-    vector<ll> a;
     cin >> t;
     while(t--){
+        vector<ll> a;
         cin >> n;
         for(i=0;i<n;i++){
             cin >> temp;
