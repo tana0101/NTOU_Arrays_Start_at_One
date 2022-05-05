@@ -22,6 +22,7 @@
 | [2022 NTOU Winter Camp](https://codeforces.com/group/dnlUA4rsoS/contest/372253) | 2022/2/19 | 10/16 |     2/12     |.|***B***|.|.|.| F |.|***H***|***I***| J |.|.|
 | [2022 I2CP Mock Contest 1](https://codeforces.com/group/dnlUA4rsoS/contest/372253) | 2022/3/09 | 9/16 |     2/6     | A | ***B*** | C |***D***| ***E*** | ***F*** |
 | [2022 I2CP Mock Contest 2](https://codeforces.com/group/dnlUA4rsoS/contest/374643) | 2022/3/23 | 9/15 |     0/6     | ***A*** | ***B*** | ***C*** |***D***| ***E*** | ***F*** |
+| [2022 I2CP Mock Contest 3](https://codeforces.com/group/dnlUA4rsoS/contest/380617) | 2022/5/4 | 7/14 |     2/7     | . | . | C |***D***| E | .|.|
 
 ## Report
 
