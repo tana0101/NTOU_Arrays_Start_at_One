@@ -20,7 +20,7 @@ bool cmp(int a,int b){
 
 signed main() {
     io
-    ll t,n,m,i,j,k,temp;
+    ll t,n,m,i,j,k,temp,ans,sum;
     int a,b,c,d,e,f,g,h;
     cin >>
 
