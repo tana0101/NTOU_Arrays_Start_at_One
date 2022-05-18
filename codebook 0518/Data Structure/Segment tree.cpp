@@ -79,3 +79,28 @@ void update(int i,int l,int r,int ql,int qr,int v){
     if(qr> mid)  update(cr(i),mid+1,r,ql,qr,v);
     pull(i,l,r);
 }
+
+/*動態開點*/
+struct node{
+    node *l, *r;
+    int val,tag;
+};
+void update(node *x, int l, int r, int ql, int qr, int v){
+    push(x, l, r);
+    if(ql <= l &&  r <= qr){
+        x->tag += v;
+        return;
+    }
+    int mid=(l+r)>>1;
+    if(ql <= mid){
+        if(x->l == nullptr)//判斷是否有節點
+            x->l = new node(); 
+        update(x->l, l , mid, ql, qr, v);
+    }
+    if(qr >  mid){
+        if(x->r == nullptr)//判斷是否有節點
+            x->r = new node(); 
+        update(x->r, mid+1, r, ql, qr, v);
+    }
+    pull(x, l, r);
+}
