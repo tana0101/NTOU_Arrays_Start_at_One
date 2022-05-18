@@ -1,61 +1,114 @@
-struct Treap {
-  int data, sz;
-  Treap *l, *r;
-  Treap(int k) : data(k), sz(1), l(0), r(0) {}
+struct Treap{
+    int key,pri,sz;     //key,priority,size
+    Treap *l, *r;       //左右子樹
+    Treap(){}
+    Treap(int _key){
+        key = _key;
+        pri = rand();   //隨機的數維持樹的平衡
+        sz  = 1;
+        l = r = nullptr;
+    }
 };
-inline int sz(Treap *o) { return o ? o->sz : 0; }
-void pull(Treap *o) { o->sz = sz(o->l) + sz(o->r) + 1; }
-void push(Treap *o) {}
-Treap *merge(Treap *a, Treap *b) {
-  if (!a || !b) return a ? a : b;
-  if (randint(sz(a)+sz(b)) < sz(a))
-    return push(a), a->r = merge(a->r, b), pull(a), a;
-  return push(b), b->l = merge(a, b->l), pull(b), b;
+Treap *root;
+int Size(Treap* x){ return x ? x->sz : 0 ; }
+void pull(Treap *x){ x->sz = Size(x->l) + Size(x->r) + 1;}
+Treap* merge(Treap *a,Treap *b){
+    //其中一個子樹為空則回傳另一個
+    if(!a || !b)    return a ? a : b; 
+    if(a->pri > b->pri){//如果a的pri比較大則a比較上面
+        a->r = merge(a->r,b);//將a的右子樹跟b合併
+        pull(a);
+        return a;
+    }
+    else{  //如果b的pri比較大則b比較上面
+        b->l = merge(a,b->l);//將b的左子樹根a合併
+        pull(b);
+        return b;
+    }
 }
-void split(Treap *o, Treap *&a, Treap *&b, int k) {
-  if (!o) return a = b = 0, void();
-  push(o);
-  if (o->data <= k)
-    a = o, split(o->r, a->r, b, k), pull(a);
-  else b = o, split(o->l, a, b->l, k), pull(b);
+void splitByKth(Treap *x,int k,Treap*& a,Treap*& b){
+    if(!x){  a = b = nullptr;  }
+    else if(Size(x->l) + 1 <= k){
+        a = x;
+        splitByKth(x->r, k - Size(x->l) - 1, a->r, b);
+        pull(a);
+    }
+    else{
+        b = x;
+        splitByKth(x->l, k, a, b->l);
+        pull(b);
+    }
 }
-void split2(Treap *o, Treap *&a, Treap *&b, int k) {
-  if (sz(o) <= k) return a = o, b = 0, void();
-  push(o);
-  if (sz(o->l) + 1 <= k)
-    a = o, split2(o->r, a->r, b, k - sz(o->l) - 1);
-  else b = o, split2(o->l, a, b->l, k);
-  pull(o);
+void splitByKey(Treap *x,int k,Treap*& a,Treap*& b){
+    if(!x){  a = b = nullptr;  }
+    else if(x->key<=k){
+        a = x;
+        splitByKey(x->r, k, a->r, b);
+        pull(a);
+    }
+    else{
+        b = x;
+        splitByKey(x->l, k, a, b->l);
+        pull(b);
+    }
 }
-Treap *kth(Treap *o, int k) {
-  if (k <= sz(o->l)) return kth(o->l, k);
-  if (k == sz(o->l) + 1) return o;
-  return kth(o->r, k - sz(o->l) - 1);
+void insert(int val){           //新增一個值為val的元素
+    Treap *x = new Treap(val);  //設一個treap節點
+    Treap *l,*r;
+    splitByKey(root, val, l, r);//找到新節點要放的位置
+    root = merge(merge(l,x),r); //合併到原本的treap裡
+}                                 
+void erase(int val){            //移除所有值為val的元素
+    Treap *l,*mid,*r;
+    splitByKey(root, val, l, r);//把小於等於val的丟到l
+    splitByKey(l, val-1, l, mid);
+    //小於val的丟到l,等於val的就會在mid裡
+    root = merge(l,r);          //將除了val以外的值合併
 }
-int Rank(Treap *o, int key) {
-  if (o->data < key)
-    return sz(o->l) + 1 + Rank(o->r, key);
-  else return Rank(o->l, key);
+int findVal(int val){ //小於等於val的size
+    int size = -1;
+    Treap *l, *r;
+    splitByKey(root, val, l, r); //把小於等於val的丟到l
+    size = Size(l);
+    root = merge(l,r);
+    return size;
 }
-bool erase(Treap *&o, int k) {
-  if (!o) return 0;
-  if (o->data == k) {
-    Treap *t = o;
-    push(o), o = merge(o->l, o->r);
-    delete t;
-    return 1;
-  }
-  Treap *&t = k < o->data ? o->l : o->r;
-  return erase(t, k) ? pull(o), 1 : 0;
+void interval(Treap *&o, int l, int r) {// [l,r]區間
+    Treap *a, *b, *c;
+    splitByKey(o, l - 1, a, b), splitByKey(b, r, b, c);
+    // operate
+    o = merge(a, merge(b, c));
 }
-void insert(Treap *&o, int k) {
-  Treap *a, *b;
-  split(o, a, b, k);
-  o = merge(a, merge(new Treap(k), b));
+void inOrderTraverse(Treap* o, int print) {// 中序
+    if (o != NULL){
+        push(o);
+        inOrderTraverse(o->l, print);
+        // print
+        if(print) cout << o->val <<"  ";
+        inOrderTraverse(o->r, print);
+    }
 }
-void interval(Treap *&o, int l, int r) {
-  Treap *a, *b, *c;
-  split2(o, a, b, l - 1), split2(b, b, c, r);
-  // operate
-  o = merge(a, merge(b, c));
+// Rank Tree
+// Kth(k)：查找第k小的元素
+// Rank(x)：x的名次，即x是第幾小的元素
+int kth(Treap* o, int k){
+    if(o == NULL || k > o -> sz || k <= 0)   return 0;
+    int s = (o -> l == NULL ? 0 : o -> l -> sz);
+    if(k == s + 1)  return o -> key;
+    else if(k <= s) return kth(o -> l, k);
+    else            return kth(o -> r, k - s - 1);
+}
+int rank(Node* o, int x){
+    if(o == NULL) return 0;
+    int res = 0;
+    int s = (o -> l == NULL ? 0 : o -> l -> sz);
+    if(x <= o -> key){
+        res += rank(o -> l, x);
+        res += x == o -> key;
+    }
+    else{
+        res += s + 1;
+        res += rank(o -> r, x);
+    }
+    return res;
 }
