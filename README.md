@@ -30,3 +30,5 @@
 * [**2022 NTOU Winter Camp**](https://hackmd.io/@0c5ZiKjZR66nH91RjZcFfw/Hkm3zmYy5)
 * [**2022 I2CP Mock Contest 1**](https://hackmd.io/@0c5ZiKjZR66nH91RjZcFfw/SyIEHB2Z9)
 * [**2022 I2CP Mock Contest 2**](https://hackmd.io/@0c5ZiKjZR66nH91RjZcFfw/Hycqvljmc)
+* [**2022 I2CP Mock Contest 3**](https://hackmd.io/@0c5ZiKjZR66nH91RjZcFfw/HJymTC0S5)
+* [**2022 I2CP Mock Contest 4**](https://hackmd.io/@0c5ZiKjZR66nH91RjZcFfw/HysBo0VDc)
