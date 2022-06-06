@@ -1,9 +1,12 @@
 # NTOU_Arrays_Start_at_One
 
 ## Codebook
-Graph(Tree)/Eulerian Path & Circuit.cpp 待改
+筆記：Graph(Tree)/Eulerian Path & Circuit.cpp 待改
+
 DFS/BFS 待改
+
 Graph註解有誤 待改
+
 幾何 待整理
 
 **by 林一 2022/06/07**
