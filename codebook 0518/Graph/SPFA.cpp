@@ -3,7 +3,6 @@ struct Edge {
     int idx, w;
 };
 vector<Edge> adj[MAX_V]; //adjacency list
-vector<bool> inp(MAX_V);
 int dist[MAX_V];
 //return true if negative cycle exists
 bool spfa(int vn, int s) {
