@@ -5,7 +5,7 @@ struct Edge {
 vector<Edge> adj[MAX_V]; //adjacency list
 int dist[MAX_V];
 //return true if negative cycle exists
-bool spfa(int vn, int s) {
+bool spfa(int vn, int s) { //if node starts at 1, vn++
     fill(dist, dist + vn, INF); dist[s] = 0;
     vector<int> cnt(vn, 0);
     vector<bool> inq(vn, 0);
