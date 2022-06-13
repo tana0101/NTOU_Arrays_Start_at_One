@@ -33,9 +33,8 @@ Topological Sort 不完整
 | [2022 I2CP Mock Contest 2](https://codeforces.com/group/dnlUA4rsoS/contest/374643) | 2022/3/23 | 9/15 |     0/6     | ***A*** | ***B*** | ***C*** |***D***| ***E*** | ***F*** |
 | [2022 I2CP Mock Contest 3](https://codeforces.com/group/dnlUA4rsoS/contest/380617) | 2022/5/04 | 7/14 |     2/7     | ***A*** | ***B*** | C |***D***| E |***F***|***G***|
 | [2022 I2CP Mock Contest 4](https://codeforces.com/group/dnlUA4rsoS/contest/382335) | 2022/5/18 | 8/12 |     1/7     | ***A*** | ***B*** | C | ***D*** | ***E*** | ***F*** | ***G*** |
-
+| [2022 Ocean Cup 熱身賽消波塊組](https://codeforces.com/gym/384996/standings) | 2022/6/07 | 10/21 |     6/9     | A | B | C | D | E | . | . | . | I |
 ## Report
-
 * [**2022 NTOU Winter Camp**](https://hackmd.io/@0c5ZiKjZR66nH91RjZcFfw/Hkm3zmYy5)
 * [**2022 I2CP Mock Contest 1**](https://hackmd.io/@0c5ZiKjZR66nH91RjZcFfw/SyIEHB2Z9)
 * [**2022 I2CP Mock Contest 2**](https://hackmd.io/@0c5ZiKjZR66nH91RjZcFfw/Hycqvljmc)
