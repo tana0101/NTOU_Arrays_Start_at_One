@@ -9,6 +9,8 @@ Graph註解有誤 待改
 
 幾何 待整理
 
+Topological Sort 不完整
+
 **by 林一 2022/06/07**
 ### References
 - [**NYCU_gAwr_gurA**](https://github.com/nella17/NYCU_gAwr_gurA)
