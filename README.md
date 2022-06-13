@@ -15,7 +15,7 @@ math 組合 dp模板
 
 下次比賽再整理😢
 
-**by 林一 2022/06/07**
+**by 林一 2022/06/13**
 ### References
 - [**NYCU_gAwr_gurA**](https://github.com/nella17/NYCU_gAwr_gurA)
 - [**allem40306/Codebook_Sample**](https://github.com/allem40306/Codebook_Sample.git)
