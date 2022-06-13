@@ -23,6 +23,9 @@ math 組合 dp模板
 - **NTOU Introduction to Competitive Programming**
 - **NCTU PCCA 2022 Winter-Camp**
 - **NTHU 2018 ION Camp**
+- **C++求解组合数的具体实现**(https://blog.csdn.net/albertsh/article/details/108691877)
+- **演算法筆記**(https://web.ntnu.edu.tw/~algo/)
+- **成大資工Wiki**(http://wiki.csie.ncku.edu.tw/acm/course/)
 
 ## Training
 
