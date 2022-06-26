@@ -77,4 +77,5 @@
 \contentsline {section}{\numberline {11}Other}{17}{}%
 \contentsline {section}{\numberline {12}Flow}{18}{}%
 \contentsline {subsection}{\numberline {12.1}MinCostMaxFlow}{18}{}%
-\contentsline {subsection}{\numberline {12.2}KM}{18}{}%
+\contentsline {subsection}{\numberline {12.2}Dinic}{18}{}%
+\contentsline {subsection}{\numberline {12.3}KM}{19}{}%
