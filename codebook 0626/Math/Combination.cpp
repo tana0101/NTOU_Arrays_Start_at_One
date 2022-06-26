@@ -7,4 +7,4 @@ for(long long i = 1; i <= N; i++)
 inv[N] = FastPow(fac[N], MOD-2); // 模逆元
 for(ll i = N-1; i >=0; i--)
     inv[i] = inv[i+1] * (i+1) % MOD;
-ll c(ll n, ll m){return fac[n]*inv[m]*inv[n-m]}
+ll c(ll n, ll m){return fac[n]*inv[m]*inv[n-m];}
