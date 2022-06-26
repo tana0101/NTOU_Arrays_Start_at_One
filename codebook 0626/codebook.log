@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.5.18)  26 JUN 2022 05:02
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.5.18)  26 JUN 2022 13:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -557,7 +557,7 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 LaTeX Font Warning: Font shape `TU/NotoSansCJKTC(0)/m/it' undefined
 (Font)              using `TU/NotoSansCJKTC(0)/m/n' instead on input line 1.
 
-) (Math/Euler function table.cpp) (Math/Sieve_Prime.cpp) (Math/fast_pow.cpp
+) (Math/Euler function table.cpp) (Math/Sieve_Prime.cpp)
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 3.60004pt, for example:
@@ -565,9 +565,9 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 
 [1
 
-]) (Math/Combination.cpp) (Math/factorization.cpp) (Math/Miller_Rabin.cpp)
-(Math/Multiplication.cpp) (Math/karatsuba.cpp) (Math/ax+by=gcd(a,b).cpp)
-(Math/josephus.cpp
+] (Math/fast_pow.cpp) (Math/Combination.cpp) (Math/factorization.cpp)
+(Math/Miller_Rabin.cpp) (Math/Multiplication.cpp) (Math/karatsuba.cpp)
+(Math/ax+by=gcd(a,b).cpp) (Math/josephus.cpp
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 3.60004pt, for example:
@@ -680,30 +680,28 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{3.60004pt}.
 
 [16]) (STL/erase.cpp) (STL/stringstream.cpp) (STL/list.cpp) (STL/set.cpp)
-(STL/map.cpp) (STL/priority queue.cpp) (STL/bitset.cpp) (Other/pre work.cpp
+(STL/map.cpp) (STL/priority queue.cpp) (STL/bitset.cpp) (Other/pre work.cpp)
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 3.60004pt, for example:
 (fancyhdr)                \setlength{\footskip}{3.60004pt}.
 
-[17]) (Other/funny.cpp))
+[17] (flow/MinCostMaxFlow.cpp) (Other/funny.cpp) (flow/KM.cpp))
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 3.60004pt, for example:
 (fancyhdr)                \setlength{\footskip}{3.60004pt}.
 
-[18
-
-] (codebook.aux)
+[18] (codebook.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 10576 strings out of 410967
- 233819 string characters out of 2823956
+ 10626 strings out of 410967
+ 234295 string characters out of 2823956
  1719222 words of memory out of 3000000
- 30986 multiletter control sequences out of 15000+600000
+ 31029 multiletter control sequences out of 15000+600000
  471372 words of font info for 69 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,12n,77p,250b,1647s stack positions out of 10000i,1000n,20000p,200000b,80000s

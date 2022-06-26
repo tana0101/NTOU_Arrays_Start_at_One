@@ -75,3 +75,6 @@
 \contentsline {subsection}{\numberline {10.7}Priority Queue}{17}{}%
 \contentsline {subsection}{\numberline {10.8}Bitset}{17}{}%
 \contentsline {section}{\numberline {11}Other}{17}{}%
+\contentsline {section}{\numberline {12}Flow}{18}{}%
+\contentsline {subsection}{\numberline {12.1}MinCostMaxFlow}{18}{}%
+\contentsline {subsection}{\numberline {12.2}KM}{18}{}%
