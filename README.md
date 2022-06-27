@@ -16,17 +16,17 @@
 ## Training
 
 > A:  賽中 AC <br>
-> __***A***__: 賽後 AC 
+> ***(A)***: 賽後 AC 
 
 | Contest               | Date      | Rank   | Solved/Total | ***A*** | ***B*** | ***C*** | ***D*** | ***E*** | ***F*** | ***G*** | ***H*** | ***I*** | ***J*** | ***K*** | ***L*** |
 | :----------------------------------------------------------: | :--------: | :--: | :----------: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
-| [2022 PCCA Winter Camp](https://hackmd.io/@qwe854896/BkSMg4MAF) | 2022/1/29 | 77/153 |     1/11     | ***A*** | ***B*** |.|.| ***E*** | ***F*** |.|.|.|.| K |
-| [2022 NTOU Winter Camp](https://codeforces.com/group/dnlUA4rsoS/contest/372253) | 2022/2/19 | 10/16 |     2/12     |.|***B***|.|.|.| F |.|***H***|***I***| J |.|.|
-| [2022 I2CP Mock Contest 1](https://codeforces.com/group/dnlUA4rsoS/contest/372253) | 2022/3/09 | 9/16 |     2/6     | A | ***B*** | C |***D***| ***E*** | ***F*** |
-| [2022 I2CP Mock Contest 2](https://codeforces.com/group/dnlUA4rsoS/contest/374643) | 2022/3/23 | 9/15 |     0/6     | ***A*** | ***B*** | ***C*** |***D***| ***E*** | ***F*** |
-| [2022 I2CP Mock Contest 3](https://codeforces.com/group/dnlUA4rsoS/contest/380617) | 2022/5/04 | 7/14 |     2/7     | ***A*** | ***B*** | C |***D***| E |***F***|***G***|
-| [2022 I2CP Mock Contest 4](https://codeforces.com/group/dnlUA4rsoS/contest/382335) | 2022/5/18 | 8/12 |     1/7     | ***A*** | ***B*** | C | ***D*** | ***E*** | ***F*** | ***G*** |
-| [2022 Ocean Cup 熱身賽消波塊組](https://codeforces.com/gym/384996/standings) | 2022/6/07 | 10/21 |     6/9     | A | B | C | D | E | ***F*** | ***G*** | . | I |
+| [2022 PCCA Winter Camp](https://hackmd.io/@qwe854896/BkSMg4MAF) | 2022/1/29 | 77/153 |     1/11     | ***(A)*** | ***(B)*** |.|.| ***(E)*** | ***(F)*** |.|.|.|.| K |
+| [2022 NTOU Winter Camp](https://codeforces.com/group/dnlUA4rsoS/contest/372253) | 2022/2/19 | 10/16 |     2/12     |.|***(B)***|.|.|.| F |.|***H***|***I***| J |.|.|
+| [2022 I2CP Mock Contest 1](https://codeforces.com/group/dnlUA4rsoS/contest/372253) | 2022/3/09 | 9/16 |     2/6     | A | ***(B)*** | C |***(D)***| ***(E)*** | ***(F)*** |
+| [2022 I2CP Mock Contest 2](https://codeforces.com/group/dnlUA4rsoS/contest/374643) | 2022/3/23 | 9/15 |     0/6     | ***(A)*** | ***(B)*** | ***(C)*** |***(D)***| ***(E)*** | ***(F)*** |
+| [2022 I2CP Mock Contest 3](https://codeforces.com/group/dnlUA4rsoS/contest/380617) | 2022/5/04 | 7/14 |     2/7     | ***(A)*** | ***(B)*** | C |***(D)***| E |***(F)***|***(G)***|
+| [2022 I2CP Mock Contest 4](https://codeforces.com/group/dnlUA4rsoS/contest/382335) | 2022/5/18 | 8/12 |     1/7     | ***(A)*** | ***(B)*** | C | ***(D)*** | ***(E)*** | ***(F)*** | ***(G)*** |
+| [2022 Ocean Cup 熱身賽消波塊組](https://codeforces.com/gym/384996/standings) | 2022/6/07 | 10/21 |     6/9     | A | B | C | D | E | ***(F)*** | ***(G)*** | . | I |
 ## Report
 * [**2022 NTOU Winter Camp**](https://hackmd.io/@0c5ZiKjZR66nH91RjZcFfw/Hkm3zmYy5)
 * [**2022 I2CP Mock Contest 1**](https://hackmd.io/@0c5ZiKjZR66nH91RjZcFfw/SyIEHB2Z9)
