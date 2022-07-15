@@ -29,7 +29,7 @@
 | [2022 Ocean Cup 熱身賽消波塊組](https://codeforces.com/gym/384996/standings) | 2022/6/07 | 10/21 |     6/9     | A | B | C | D | E | ***(F)*** | ***(G)*** | . | I |
 | [2018-2019 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/101908) | 2022/7/02 | 10/12(492) |     4/13     | . | ***(B)*** | C | D | E | ***(F)*** | ***(G)*** | . | I | ***(J)*** | . | ***(L)*** | . |
 | [2019 ICPC Malaysia National](https://codeforces.com/gym/102219) | 2022/7/08 | 8/12(413) |     6/11     | A | B | C | . | ***(E)***  | ***(F)***  | . | ***(H)*** | I | J | K |
-| [2017-2018 ACM-ICPC, NEERC, Northern Subregional Contest](https://codeforces.com/gym/101612/standings) | 2022/7/15 | 8/11(513) |     4/12     | A | B | . | . | . | . | . | . | I | . | K |
+| [2017-2018 ACM-ICPC, NEERC, Northern Subregional Contest](https://codeforces.com/gym/101612/standings) | 2022/7/15 | 8/11(513) |     4/12     | A | B | . | . | . | . | . | . | I | . | K | L |
 
 ## Report
 * [**2022 NTOU Winter Camp**](https://hackmd.io/@0c5ZiKjZR66nH91RjZcFfw/Hkm3zmYy5)
