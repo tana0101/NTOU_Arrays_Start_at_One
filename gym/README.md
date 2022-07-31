@@ -11,3 +11,4 @@
 | [2019 ICPC Malaysia National](https://codeforces.com/gym/102219) | 2022/7/08 | 8/12(413) |     6/11     | A | B | C | . | ***(E)***  | ***(F)***  | . | ***(H)*** | I | J | K |
 | [2017-2018 ACM-ICPC, NEERC, Northern Subregional Contest](https://codeforces.com/gym/101612/standings) | 2022/7/15 | 8/11(513) |     4/12     | A | B | ***(C)*** | . | . | . | . | ***(H)*** | I | . | K | ***(L)*** |
 | [2017-2018 ACM-ICPC Southwestern European Regional Programming Contest (SWERC 2017)](https://codeforces.com/gym/101635) | 2022/7/22 | 4/8(351) |     4/11     | A | . | . | . | E | F | . | . | . | J | ***(K)*** |
+| [2019-2020 ICPC Southwestern European Regional Programming Contest (SWERC 2019-20)](https://codeforces.com/gym/102501) | 2022/7/29 | 6/7(626) |     4/12     | . | . | B | C | . | F | . | . | I | . | . | . |
