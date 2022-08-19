@@ -71,7 +71,7 @@ signed main(){
                 near*=-1;
                 int cnt=1;
                 while(near<0){
-                    if(cnt==3)
+                    if(cnt==2)
                         near+=31;
                     else
                         near+=30;
