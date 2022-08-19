@@ -23,31 +23,9 @@ signed main(){
     
     while(n--){
         cin >> temp;
-        if(temp==30){
-            int wait=0;
-            if(str=="Sat")wait+=2;
-            else if(str=="Sun")wait+=1;
-            mn=min(mn,wait);
-        }else{
-            int init=(week[str]-(temp%7)+7)%7;
-            while(temp>=30){
-                init=(init+2)%7;
-                if(init==6){
-                    temp-=2;
-                    init=1;
-                }
-                else if(init==0){
-                    temp-=1;
-                    init=1;
-                }
-                temp-=30;
-            }
-            int remain=30-temp;
-            int days=remain%7;
-            int d=(week[str]+days)%7;
-            if(d==6)remain+=2;
-            else if(d==0)remain+=1;
-            mn=min(mn,remain);
+        int init=(week[str]-(temp%7)+7)%7;
+        if(init==1||init==3||init==5){
+
         }
     }
     cout<<mn<<"\n";
