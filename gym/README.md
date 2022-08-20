@@ -1,5 +1,9 @@
 ## 僅作為比賽當時的備份，並非正解。
 
+## 補題
+
+https://github.com/Jayyyu1w/CP-records
+
 ## Training
 
 > A:  賽中 AC <br>
