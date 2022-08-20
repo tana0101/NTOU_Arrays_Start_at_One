@@ -2,7 +2,7 @@
 
 ## 補題
 
-https://github.com/Jayyyu1w/CP-records
+[Jayyyu1w](https://github.com/Jayyyu1w/CP-records)
 
 ## Training
 
