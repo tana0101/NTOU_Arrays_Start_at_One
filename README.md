@@ -1,6 +1,6 @@
 # NTOU_Arrays_Start_at_One
 
-tana0101, wei0107, Jayyyu1w
+**tana0101, wei0107, Jayyyu1w**
 
 ## Codebook
 
