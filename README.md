@@ -1,6 +1,6 @@
 # NTOU_Arrays_Start_at_One
 
-**tana0101, wei0107, Jayyyu1w**
+**[tana0101](https://github.com/tana0101), [wei0107](https://github.com/wei0107), [Jayyyu1w](https://github.com/Jayyyu1w)**
 
 ## Codebook
 
