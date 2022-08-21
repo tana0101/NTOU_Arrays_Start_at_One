@@ -2,8 +2,7 @@
 using namespace std;
 
 signed main(){
-    int n;
-    while(cin >> n){
-        cout << n << "\n";
-    }
+    string str;
+    cin >> str;
+    cout << "hello! " << str <<"!\n";
 }
