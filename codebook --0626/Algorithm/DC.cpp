@@ -1,7 +1,6 @@
 /*最近點對*/
-double dist(pair<double, double> a, pair<double, double> b) {
+double dist(pair<double, double> a, pair<double, double> b)
 	return sqrt(pow((a.first - b.first), 2) + pow((a.second - b.second), 2));
-}
 double closest(int l, int r) {
 	if (l >= r)
 		return 10000;
@@ -17,48 +16,42 @@ double closest(int l, int r) {
 	}
 	return minimum;
 }
-/*Quick Sort*/
-void quicksort(int array[], int left, int right){
+void quicksort(int arr[], int left, int right){
     if (left >= right) return;
     int i = left, j = right;
-    int k = (left + right) / 2; // 可以隨便選
-    int pivot = array[k];
+    int k = (left + right) / 2;
+    int pivot = arr[k];
     while (true){
-        // 小於等於改成小於，就不必偵測陣列邊界。
-        while (array[i] < pivot) i++;
-        while (array[j] > pivot) j--;
+        while (arr[i] < pivot) i++;
+        while (arr[j] > pivot) j--;
         if (i >= j) return;
-        // 代價：等於pivot的數字，一直做交換。
-        swap(array[i], array[j]);
+        swap(arr[i], arr[j]);
         i++; j--;
     }
-    // 代價：array[i]不一定就是pivot。
-    quicksort(array, left, j);
-    quicksort(array, i, right);
+    quicksort(arr, left, j);
+    quicksort(arr, i, right);
 }
-/*Merge Sort*/
-void Merge(vector<int> &Array, int front, int mid, int end) {
-    vector<int> LeftSubArray(Array.begin() + front, Array.begin() + mid + 1);
-    vector<int> RightSubArray(Array.begin() + mid + 1, Array.begin() + end + 1);
+void Merge(vector<int> &Arr, int front, int mid, int end) {
+    vector<int> Left(Arr.begin() + front, Arr.begin() + mid + 1);
+    vector<int> Right(Arr.begin() + mid + 1, Arr.begin() + end + 1);
     int idxLeft = 0, idxRight = 0;
-    LeftSubArray.insert(LeftSubArray.end(), numeric_limits<int>::max());
-    RightSubArray.insert(RightSubArray.end(), numeric_limits<int>::max());
-    // Pick min of LeftSubArray[idxLeft] and RightSubArray[idxRight], and put into Array[i]
+    Left.insert(Left.end(), INT_MAX);
+    Right.insert(Right.end(), INT_MAX);
     for (int i = front; i <= end; i++) {
-        if (LeftSubArray[idxLeft] < RightSubArray[idxRight]) {
-            Array[i] = LeftSubArray[idxLeft];
+        if (Left[idxLeft] < Right[idxRight]) {
+            Arr[i] = Left[idxLeft];
             idxLeft++;
         } else {
-            Array[i] = RightSubArray[idxRight];
+            Arr[i] = Right[idxRight];
             idxRight++;
         }
     }
 }
-void MergeSort(vector<int> &Array, int front, int end) {
+void MergeSort(vector<int> &Arr, int front, int end) {
     if (front >= end)
         return;
     int mid = front + (end - front) / 2;
-    MergeSort(Array, front, mid);
-    MergeSort(Array, mid + 1, end);
-    Merge(Array, front, mid, end);
+    MergeSort(Arr, front, mid);
+    MergeSort(Arr, mid + 1, end);
+    Merge(Arr, front, mid, end);
 }

@@ -55,9 +55,7 @@ int dist(int u, int v){
 }
 // init 建表
 for(s=1;s<=n;s++) anc[s][0] = fa[s]; 
-for(i=1;i<=lgn;i++){
-    for(s=1;s<=n;s++){
+for(i=1;i<=lgn;i++)
+    for(s=1;s<=n;s++)
         anc[s][i] = anc[anc[s][i-1]][i-1];
         // query[s][i] = max(query[s][i-1],query[anc[s][i-1]][i-1]);
-    }
-}

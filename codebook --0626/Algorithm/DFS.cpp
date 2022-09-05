@@ -16,8 +16,8 @@ void DFS(int k) {
 /*Traveling Knight Problem*/
 #define X 5 //棋盤
 #define Y 5
-//騎士共有8個方向
-int dir[8][2]={{1,2},{2,1},{1,-2},{-2,1},{-1,2},{2,-1},{-1,-2},{-2,-1}};
+int dir[8][2] = 
+{{1,2},{2,1},{1,-2},{-2,1},{-1,2},{2,-1},{-1,-2},{-2,-1}};
 int board[X][Y]={0},tot=0,_x,_y;
 void dfs(int x,int y,int t) {
 	if (t>X*Y) {
@@ -34,7 +34,6 @@ void dfs(int x,int y,int t) {
 	}
 }
 signed main(){
-	cin>>_x>>_y; //起始點
-	board[_x][_y]=1;
+	board[_x][_y]=1; //starts
 	dfs(_x,_y,2);
 }
