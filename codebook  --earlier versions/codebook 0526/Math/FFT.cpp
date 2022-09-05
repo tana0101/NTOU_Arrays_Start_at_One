@@ -1,5 +1,3 @@
-/*FFT*/
-
 // use llround() to avoid EPS
 typedef double Double;
 const Double PI = acos(-1);
