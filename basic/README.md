@@ -235,6 +235,12 @@ None, Down, Button5, 3
 sudo apt install kolourpaint4
 ```
 
+### 雙系統時間修正
+
+```cmd
+sudo timedatectl set-local-rtc 1
+```
+
 ### 執行exe檔案 --Wine
 
 ```cmd
