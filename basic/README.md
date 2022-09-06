@@ -147,6 +147,10 @@ https://code.yidas.com/linux-vi-vim-command/
 
 ## Github
 
+### 安裝
+```git
+sudo apt-get install git-all
+```
 ### 個人資料
 ```git
 # 設定
