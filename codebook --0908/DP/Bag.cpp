@@ -18,36 +18,28 @@ void knapsack(int n, int w){
 			c[j] = max(c[j], c[j - weight[i]] + cost[i]);
 	cout << c[w];
 }
-// Subset Sum Problem
-// Partition Problem
-// Bin Packing Problem
-
 // 無限背包
 // 物品有許多種類，每一種物品都無限量供應的背包問題。
 void knapsack(int n, int w){
-    memset(c, 0, sizeof(c));
-    for (int i=0; i<n; ++i)
-        for (int j = weight[i]; j <= w; ++j)
-            c[j] = max(c[j], c[j - weight[i]] + cost[i]);
-
-    cout << "最高的價值為" << c[w];
+  memset(c, 0, sizeof(c));
+  for (int i=0; i<n; ++i)
+    for (int j = weight[i]; j <= w; ++j)
+      c[j] = max(c[j], c[j - weight[i]] + cost[i]);
+  cout << "最高的價值為" << c[w];
 }
-
 // 有限背包
 // 物品有許多種類，每一種物品都是限量供應的背包問題。
 int cost[N], weight[N], number[N];
 // number[n]：第n種物品的數量。
 void knapsack(int n, int w){
-    for (int i = 0; i < n; ++i)
-    {
-        int num = min(number[i], w / weight[i]);
-        for (int k = 1; num > 0; k *= 2)
-        {
-            if (k > num) k = num;
-            num -= k;
-            for (int j = w; j >= weight[i] * k; --j)
-                c[j] = max(c[j], c[j - weight[i] * k] + cost[i] * k);
-        }
+  for (int i = 0; i < n; ++i){
+    int num = min(number[i], w / weight[i]);
+    for (int k = 1; num > 0; k *= 2){
+      if (k > num) k = num;
+      num -= k;
+      for (int j = w; j >= weight[i] * k; --j)
+        c[j] = max(c[j], c[j - weight[i] * k] + cost[i] * k);
     }
-    cout << "最高的價值為" << c[w];
+  }
+  cout << "最高的價值為" << c[w];
 }

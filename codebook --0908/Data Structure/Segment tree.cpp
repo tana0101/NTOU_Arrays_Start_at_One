@@ -11,7 +11,7 @@ vector <int> tag(MAXN);
 vector <int> arr(MAXN);
 vector <int> tree(MAXN);
 
-void build(int i,int l,int r){ //i為當前節點index，l,r為當前遞迴區間
+void build(int i,int l,int r){ 
     if(l == r){ // 遞迴到區間大小為1
         tree[i] = arr[l];
         return;
@@ -19,22 +19,28 @@ void build(int i,int l,int r){ //i為當前節點index，l,r為當前遞迴區�
     int mid=(l+r)/2; //往兩邊遞迴
     build(cl(i),l,mid); 
     build(cr(i),mid+1,r);
-    tree[i] = max(tree[cl(i)], tree[cr(i)]); //<-可修改條件
+    tree[i] = max(tree[cl(i)], tree[cr(i)]);       //<-可修改條件
     //將節點的值設成左右子節點的最大值
 }
 
-// i 為當前節點index, l, r當前區間左右界，ql, qr詢問左右界
 int query(int i,int l,int r,int ql,int qr){
-    if(ql <= l && r <= qr){ //若當前區間在詢問區間內，直接回傳區間最大值
+    if(ql <= l && r <= qr){ 
+        //若當前區間在詢問區間內，直接回傳區間最大值
         return tree[i];
     }
     int mid=(l+r)/2, ret=0; //<-可修改條件
     if(ql<=mid) // 如果左子區間在詢問區間內
-        ret = max(ret, query(cl(i),l,mid,ql,qr));   //<-可修改條件
+        ret = max(ret, query(cl(i),l,mid,ql,qr));  //<-可修改條件
     if(qr> mid) // 如果右子區間在詢問區間內
-        ret = max(ret, query(cr(i),mid+1,r,ql,qr));  //<-可修改條件
+        ret = max(ret, query(cr(i),mid+1,r,ql,qr));//<-可修改條件
     return ret;
 }
+
+
+
+
+
+
 
 
 /*單點修改*/
@@ -48,7 +54,7 @@ void update(int i,int l,int r,int pos,int val){
         update(cl(i),l,mid,pos,val);
     else // 否則往右遞迴
         update(cr(i),mid+1,r,pos,val);
-    tree[i] = max(tree[cl(i)], tree[cr(i)]);    //<-可修改條件
+    tree[i] = max(tree[cl(i)], tree[cr(i)]);      //<-可修改條件
 }
 
 /*區間修改*/
@@ -63,11 +69,13 @@ void push(int i,int l,int r){
         tag[i] = NO_TAG; // 更新後把標記消掉
     }    
 }
+
 void pull(int i,int l,int r){
     int mid = (l+r)/2;
     push(cl(i),l,mid); push(cr(i),mid+1,r);
     tree[i] = max(tree[cl(i)], tree[cr(i)]);
 }
+
 void update(int i,int l,int r,int ql,int qr,int v){
     push(i,l,r);
     if(ql<=l && r<=qr){
@@ -85,6 +93,7 @@ struct node{
     node *l, *r;
     int val,tag;
 };
+
 void update(node *x, int l, int r, int ql, int qr, int v){
     push(x, l, r);
     if(ql <= l &&  r <= qr){

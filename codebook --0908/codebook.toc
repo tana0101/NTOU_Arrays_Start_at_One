@@ -1,0 +1,86 @@
+\contentsline {section}{\numberline {1}Math}{1}{}%
+\contentsline {subsection}{\numberline {1.1}卡塔蘭數Catalan number}{1}{}%
+\contentsline {subsection}{\numberline {1.2}錯排公式Derangements}{1}{}%
+\contentsline {subsection}{\numberline {1.3}Euler function}{1}{}%
+\contentsline {subsection}{\numberline {1.4}Euler function(建表)}{1}{}%
+\contentsline {subsection}{\numberline {1.5}Sieve Prime}{1}{}%
+\contentsline {subsection}{\numberline {1.6}快速冪}{2}{}%
+\contentsline {subsection}{\numberline {1.7}Cn取m 模反, Combination, inverse}{2}{}%
+\contentsline {subsection}{\numberline {1.8}質因數分解Factorizationn}{2}{}%
+\contentsline {subsection}{\numberline {1.9}乘法取餘Multiplication}{2}{}%
+\contentsline {subsection}{\numberline {1.10}ax+by=gcd(a,b)}{2}{}%
+\contentsline {subsection}{\numberline {1.11}Miller Rabinn}{2}{}%
+\contentsline {subsection}{\numberline {1.12}快速乘法karatsuba}{2}{}%
+\contentsline {subsection}{\numberline {1.13}josephusl}{3}{}%
+\contentsline {subsection}{\numberline {1.14}大數Big number}{3}{}%
+\contentsline {subsection}{\numberline {1.15}矩陣快速冪}{3}{}%
+\contentsline {subsection}{\numberline {1.16}GaussElimination}{3}{}%
+\contentsline {subsection}{\numberline {1.17}Epsilon}{3}{}%
+\contentsline {subsection}{\numberline {1.18}Floor-Ceil}{3}{}%
+\contentsline {section}{\numberline {2}Geometry}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Struct}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Function}{4}{}%
+\contentsline {subsection}{\numberline {2.3}凸包Convex hull}{4}{}%
+\contentsline {subsection}{\numberline {2.4}旋轉卡尺}{4}{}%
+\contentsline {section}{\numberline {3}Algorithm}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Binary search}{5}{}%
+\contentsline {subsection}{\numberline {3.2}DFS}{5}{}%
+\contentsline {subsection}{\numberline {3.3}Brute Force}{5}{}%
+\contentsline {subsection}{\numberline {3.4}Divide and Conquer}{6}{}%
+\contentsline {section}{\numberline {4}Data Structure}{6}{}%
+\contentsline {subsection}{\numberline {4.1}SQRT}{6}{}%
+\contentsline {subsection}{\numberline {4.2}Mo's Algorithm}{7}{}%
+\contentsline {subsection}{\numberline {4.3}Treap}{7}{}%
+\contentsline {subsection}{\numberline {4.4}BIT}{8}{}%
+\contentsline {subsection}{\numberline {4.5}Segment tree}{8}{}%
+\contentsline {subsection}{\numberline {4.6}Persistent Segment tree and DSU}{9}{}%
+\contentsline {subsection}{\numberline {4.7}Monotonic Queue(單調隊列)}{9}{}%
+\contentsline {section}{\numberline {5}Graph(path)}{9}{}%
+\contentsline {subsection}{\numberline {5.1}Disjoint Set(Union-Find)}{9}{}%
+\contentsline {subsection}{\numberline {5.2}Kruskal’s algorithm 最小生成樹}{9}{}%
+\contentsline {subsection}{\numberline {5.3}Minimum Steiner Tree.cpp 最小斯坦因樹}{10}{}%
+\contentsline {subsection}{\numberline {5.4}Dijkstra’s algorithm}{10}{}%
+\contentsline {subsection}{\numberline {5.5}Floyd-Warshall}{10}{}%
+\contentsline {subsection}{\numberline {5.6}SPFA}{11}{}%
+\contentsline {section}{\numberline {6}Graph(Tree)}{11}{}%
+\contentsline {subsection}{\numberline {6.1}DFS and BFS}{11}{}%
+\contentsline {subsection}{\numberline {6.2}Topological Sort}{11}{}%
+\contentsline {subsection}{\numberline {6.3}Eulerian Path and Circuit}{11}{}%
+\contentsline {subsection}{\numberline {6.4}LCA}{11}{}%
+\contentsline {subsection}{\numberline {6.5}DSU on Tree}{12}{}%
+\contentsline {subsection}{\numberline {6.6}樹上差分}{12}{}%
+\contentsline {subsection}{\numberline {6.7}HLD with Segment tree}{13}{}%
+\contentsline {subsection}{\numberline {6.8}Scc 強連通分量(轉DAG)}{14}{}%
+\contentsline {subsection}{\numberline {6.9}2-SAT}{14}{}%
+\contentsline {subsection}{\numberline {6.10}BccVertex 點雙連通分量(關節點、橋)}{14}{}%
+\contentsline {section}{\numberline {7}DP}{15}{}%
+\contentsline {subsection}{\numberline {7.1}背包問題}{15}{}%
+\contentsline {subsection}{\numberline {7.2}找零問題}{15}{}%
+\contentsline {subsection}{\numberline {7.3}LCS 與 DP回溯}{16}{}%
+\contentsline {subsection}{\numberline {7.4}LIS}{16}{}%
+\contentsline {section}{\numberline {8}DP on tree}{16}{}%
+\contentsline {subsection}{\numberline {8.1}全點對距離Tree Distance}{16}{}%
+\contentsline {subsection}{\numberline {8.2}最大獨立集Independent set}{16}{}%
+\contentsline {subsection}{\numberline {8.3}最小點覆蓋Vertex Cover}{16}{}%
+\contentsline {subsection}{\numberline {8.4}最小支配集Dominating Set}{16}{}%
+\contentsline {section}{\numberline {9}String}{17}{}%
+\contentsline {subsection}{\numberline {9.1}Trie}{17}{}%
+\contentsline {subsection}{\numberline {9.2}01Trie}{17}{}%
+\contentsline {subsection}{\numberline {9.3}Hash}{17}{}%
+\contentsline {section}{\numberline {10}STL}{18}{}%
+\contentsline {subsection}{\numberline {10.1}常用tool}{18}{}%
+\contentsline {subsection}{\numberline {10.2}Erase操作}{18}{}%
+\contentsline {subsection}{\numberline {10.3}StringStream}{18}{}%
+\contentsline {subsection}{\numberline {10.4}List}{18}{}%
+\contentsline {subsection}{\numberline {10.5}Set}{18}{}%
+\contentsline {subsection}{\numberline {10.6}Map}{18}{}%
+\contentsline {subsection}{\numberline {10.7}Priority Queue}{18}{}%
+\contentsline {subsection}{\numberline {10.8}Bitset}{18}{}%
+\contentsline {section}{\numberline {11}Flow}{19}{}%
+\contentsline {subsection}{\numberline {11.1}MinCostMaxFlow}{19}{}%
+\contentsline {subsection}{\numberline {11.2}Dinic}{19}{}%
+\contentsline {subsection}{\numberline {11.3}KM}{20}{}%
+\contentsline {section}{\numberline {12}Match}{20}{}%
+\contentsline {subsection}{\numberline {12.1}run}{20}{}%
+\contentsline {subsection}{\numberline {12.2}generate}{20}{}%
+\contentsline {section}{\numberline {13}Other}{20}{}%

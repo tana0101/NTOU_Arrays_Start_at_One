@@ -10,10 +10,8 @@ void dfs(int x){
         edge[x].pop_back();
         dfs(u);
     }
-    path.push_back(x);
-}
+    path.push_back(x);}
 int main(){
     build_graph();
     dfs(st); // 如果剛好一個點出度-1=入度 則為起點
-    reverse(path.begin(),path.end());
-}
+    reverse(path.begin(),path.end());}

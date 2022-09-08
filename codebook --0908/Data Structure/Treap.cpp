@@ -11,7 +11,8 @@ struct Treap{
 };
 Treap *root;
 int Size(Treap* x){ return x ? x->sz : 0 ; }
-void pull(Treap *x){ x->sz = Size(x->l) + Size(x->r) + 1;}
+void pull(Treap *x)
+{ x->sz = Size(x->l) + Size(x->r) + 1;}
 Treap* merge(Treap *a,Treap *b){
     //其中一個子樹為空則回傳另一個
     if(!a || !b)    return a ? a : b; 
@@ -86,11 +87,8 @@ void inOrderTraverse(Treap* o, int print) {// 中序
         // print
         if(print) cout << o->val <<"  ";
         inOrderTraverse(o->r, print);
-    }
-}
-// Rank Tree
+}}
 // Kth(k)：查找第k小的元素
-// Rank(x)：x的名次，即x是第幾小的元素
 int kth(Treap* o, int k){
     if(o == NULL || k > o -> sz || k <= 0)   return 0;
     int s = (o -> l == NULL ? 0 : o -> l -> sz);
@@ -98,6 +96,7 @@ int kth(Treap* o, int k){
     else if(k <= s) return kth(o -> l, k);
     else            return kth(o -> r, k - s - 1);
 }
+// Rank(x)：x的名次，即x是第幾小的元素
 int rank(Node* o, int x){
     if(o == NULL) return 0;
     int res = 0;
@@ -110,5 +109,4 @@ int rank(Node* o, int x){
         res += s + 1;
         res += rank(o -> r, x);
     }
-    return res;
-}
+    return res;}

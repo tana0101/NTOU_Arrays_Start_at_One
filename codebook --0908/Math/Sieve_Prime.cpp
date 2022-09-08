@@ -8,6 +8,4 @@ void linear_sieve(){
             if (i * p >= N) break;
             sieve[i * p] = true;
             if (i % p == 0) break;
-        }
-    }
-}
+}}}

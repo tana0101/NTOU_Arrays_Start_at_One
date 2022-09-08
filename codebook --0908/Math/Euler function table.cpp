@@ -6,7 +6,4 @@ void phi_table(int n,int *phi){
             for(int j=i;j<=n;j+=i){  
                 if(phi[j]==0) phi[j] = j; 
                 phi[j] = phi[j] / i * (i - 1);
-            }                            
-        }
-    }
-}
+}}}}

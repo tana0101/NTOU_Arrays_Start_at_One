@@ -15,6 +15,4 @@ void bfs(int n){ // Topological Sort
             --deg[i];
             deg_sum[i] += deg_sum[u];
             if(deg[i] == 0) q.push(i);
-        }
-    }
-}
+}}}
