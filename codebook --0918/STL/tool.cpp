@@ -5,6 +5,10 @@ freopen("intel.out","w",stdout);  // 寫入 file.out 檔
 __builtin_popcount(n)   -> int
 __builtin_popcountl(n)  -> long int
 __builtin_popcountll(n) -> long long
+__builtin_popcountll  //換成二進位有幾個1
+__builtin_clzll       //返回左起第一個1之前0的個數
+__builtin_parityll    //返回1的個數的奇偶性
+__builtin_mul_overflow(a,b,&h) //回傳a*b是否溢位
 //陣列處理
 sort(arr,arr+n);
 reverse(arr,arr+n);

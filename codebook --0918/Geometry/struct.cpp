@@ -15,28 +15,27 @@ struct poly{
 struct Pt {
   ll x, y; // ll or ld
   Pt(){}
-  Pt(ll _x,ll _y){
-    x=_x, y=_y;
-  }
-  Pt operator+(const Pt &a) {
+  Pt(ll _x,ll _y){ x=_x, y=_y; }
+  
+  Pt operator+(const Pt &a) const{
     return Pt(x+a.x, y+a.y);
   }
-  Pt operator-(const Pt &a) {
+  Pt operator-(const Pt &a) const{
     return Pt(x-a.x, y-a.y);
   }
-  Pt operator*(const ld &a) {
+  Pt operator*(const ld &a) const{
     return Pt(x*a, y*a);
   }
-  Pt operator/(const ld &a) {
+  Pt operator/(const ld &a) const{
     return Pt(x/a, y/a);
   }
-  ll operator*(const Pt &a){ //內積
+  ll operator*(const Pt &a) const{ //內積
     return x*a.x + y*a.y;
   }
-  ll operator^(const Pt &a){ //外積
+  ll operator^(const Pt &a) const{ //外積
     return x*a.y - y*a.x;
   }
-  bool operator<(const Pt &a) const {
+  bool operator<(const Pt &a) const{
     return x < a.x || (x == a.x && y < a.y);
   }
   friend int cross(const Pt& o,const Pt& a,const Pt& b){ //向量外積

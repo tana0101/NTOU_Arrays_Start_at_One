@@ -6,18 +6,23 @@ bool collinearity(const Pt& a, const Pt& b, const Pt& c){
 bool inLine(const Pt& p, const Line& li){ 
     return collinearity(li.st, li.ed, p) && (li.st-p)*(li.ed-p) < EPS; //內積為負: <=0
 }
+//兩點距離
+ld dis(Pt i,Pt j){ // (int i,int j)
+    Pt vt = i - j; // Pt vt = p[i]-p[j];
+    return sqrt((ld)(vt.x)*(vt.x)+(ld)(vt.y)*(vt.y));
+}
 //平行四邊形面積
 ll areaPt(Pt i, Pt j, Pt k){ 
     return abs(cross(i, j, k));
 }
-//兩點距離
-ld distance(Pt i,Pt j){
-    Pt vt = i - j;
-    return sqrt((ld)(vt.x)*(vt.x)+(ld)(vt.y)*(vt.y));
-}
-ld distance(int i,int j){
-    Pt vt = p[i]-p[j];
-    return sqrt((ld)(vt.x)*(vt.x)+(ld)(vt.y)*(vt.y));
+//多邊形面積
+ld area(vector<Pt> pt){
+    ld sum=0;
+    for(int i=0;i<pt.size();i++){
+        Pt a=pt[i], b=pt[(i+1)%pt.size()];
+        sum+=(a^b);
+    }
+    return abs(sum/2.0);
 }
 // 輸出
 round(double x); //四捨五入至整數

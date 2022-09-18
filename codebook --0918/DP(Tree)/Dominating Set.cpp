@@ -1,9 +1,28 @@
-//狀態
-dp[i][0]: 點i屬於支配集，並且以點i為根的子樹都被覆蓋了的情況下，支配集中包含的最少點數。
-dp[i][1]: 點i不屬於支配集，且以i為根的子樹都被覆蓋，且i被其中不少於1個子結點覆蓋的情況下，支配集包含的最少點數。
-dp[i][2]: 點i不屬於支配集，且以i為根的子樹都被覆蓋，且i沒被子結點覆蓋的情況下，支配集包含的最少點數。
-// 狀態轉移
-dp[i][0] = 1 + Σmin( dp[u][0], dp[u][1], dp[u][2] )
-if(i沒有子結點) dp[i][1] = INF
-else dp[i][1] = Σmin( dp[u][0], dp[u][1] )
-dp[i][2] = Σdp[u][1]
+void Dominating_Set(int u,int p){
+  dp[u][2]=0;
+  dp[u][0]=1;
+  bool s=false;
+  int sum=0,inc=INF;
+  int k;
+  for(k=head[u];k!=-1;k=edge[k].next){
+    int to=edge[k].to;
+    if(to==p)continue;
+    DP(to,u);
+    dp[u][0]+=min(dp[to][0],min(dp[u][1],dp[u][2]));
+    if(dp[to][0]<=dp[to][1]){
+      sum+=dp[to][0];
+      s=true;
+    }
+    else{
+      sum+=dp[to][1];
+      inc=min(inc,dp[to][0]-dp[to][1]);
+    }
+    if(dp[to][1]!=INF&&dp[u][2]!=INF)dp[u][2]+=dp[to][1];
+    else dp[u][2]=INF;
+  }
+  if(inc==INF&&!s)dp[u][1]=INF;
+  else{
+    dp[u][1]=sum;
+    if(!s)dp[u][1]+=inc;
+	}
+}

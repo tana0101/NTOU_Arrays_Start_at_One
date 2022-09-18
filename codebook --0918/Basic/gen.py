@@ -4,16 +4,11 @@ t = randint(1,10)
 print(t)
 for i in range(t):
     n = randint(1,5)
-    m = randint(1,3)
-    print(n, m)
+    print(n)
     for j in range(n):
         print(randint(1,n),end=" ")
     print()
-    for j in range(m):
-        print(randint(1,m),end=" ")
-    print()
-# rand
-n = randint(1, 100)                       
+# rand                      
 ch = chr(randint(ord('a'), ord('z')))
 choiceSet = sample(s, 4)             # s choice 4
 choiceSet = sample(range(1, n+1), 4) # 1~n choice 4
