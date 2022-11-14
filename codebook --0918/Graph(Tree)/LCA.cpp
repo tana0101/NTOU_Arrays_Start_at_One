@@ -51,7 +51,7 @@ int max_cost(int u, int v){
 // 兩點距離
 int dist(int u, int v){ 
     //depth[X] + depth[Y] - 2 * depth[ancestor]
-    return dis[u] + dis[v]-2*dis[find(v)];
+    return dis[u] + dis[v]-2*dis[getLca(u,v)];
 }
 // init 建表
 for(s=1;s<=n;s++) anc[s][0] = fa[s]; 
